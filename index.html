@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-----fontlink---->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title></title>
+
+</head>
+<body>
+   <h1 class="center-heading">Job Listing</h1>
+    <div class="options">
+        <span id="featured" class="option">Featured</span>
+        <span id="part-time" class="option">Part Time</span>
+        <span id="full-time" class="option">Full Time</span>
+    </div>
+
+    <div class="job-listings">
+        <div class="box">
+            <div class="col-1">
+                <img src="logo1.jpg" alt="Company Logo">
+                <div class="content">
+                    <h2>Software Engineer</h2>
+                    <p><i class="fa-solid fa-location-dot"></i> New York, USA <i class="fa-solid fa-clock"></i> Full Time <i class="fa-regular fa-money-bill-1"></i> $123 - $456</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <i class="fa-regular fa-heart toggle-heart"></i> 
+                <button>Apply Now</button>
+                <div class="content1">
+                    <p><i class="fa-regular fa-calendar-days"></i> Deadline: 01 Jan, 2045</p>
+                </div>
+            </div>
+        </div>
+
+         <div class="job-listings">
+        <div class="box">
+            <div class="col-1">
+                <img src="logo2.jpg" alt="Company Logo">
+                <div class="content">
+                    <h2>Product Designer</h2>
+                    <p><i class="fa-solid fa-location-dot"></i> New York, USA <i class="fa-solid fa-clock"></i> Full Time <i class="fa-regular fa-money-bill-1"></i> $123 - $456</p>
+                </div>
+            </div>
+           <div class="col-2">
+                <i class="fa-regular fa-heart toggle-heart"></i> 
+                <button>Apply Now</button>
+                <div class="content1">
+                    <p><i class="fa-regular fa-calendar-days"></i> Deadline: 01 Jan, 2045</p>
+                </div>
+            </div>
+        </div>
+
+
+ <div class="job-listings">
+        <div class="box">
+            <div class="col-1">
+                <img src="logo3.jpg" alt="Company Logo">
+                <div class="content">
+                    <h2>Creative Director</h2>
+                    <p><i class="fa-solid fa-location-dot"></i> New York, USA <i class="fa-solid fa-clock"></i> Full Time <i class="fa-regular fa-money-bill-1"></i> $123 - $456</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <i class="fa-regular fa-heart toggle-heart"></i> 
+                <button>Apply Now</button>
+                <div class="content1">
+                    <p><i class="fa-regular fa-calendar-days"></i> Deadline: 01 Jan, 2045</p>
+                </div>
+            </div>
+        </div>
+
+
+ <div class="job-listings">
+        <div class="box">
+            <div class="col-1">
+                <img src="logo4.jpg" alt="Company Logo">
+                <div class="content">
+                    <h2>Marketing Managerr</h2>
+                    <p><i class="fa-solid fa-location-dot"></i> New York, USA <i class="fa-solid fa-clock"></i> Full Time <i class="fa-regular fa-money-bill-1"></i> $123 - $456</p>
+                </div>
+            </div>
+           <div class="col-2">
+                <i class="fa-regular fa-heart toggle-heart"></i> 
+                <button>Apply Now</button>
+                <div class="content1">
+                    <p><i class="fa-regular fa-calendar-days"></i> Deadline: 01 Jan, 2045</p>
+                </div>
+            </div>
+        </div>
+
+
+ <div class="job-listings">
+        <div class="box">
+            <div class="col-1">
+                <img src="logo5.jpg" alt="Company Logo">
+                <div class="content">
+                    <h2>Wordpress Developer</h2>
+                    <p><i class="fa-solid fa-location-dot"></i> New York, USA <i class="fa-solid fa-clock"></i> Full Time <i class="fa-regular fa-money-bill-1"></i> $123 - $456</p>
+                </div>
+            </div>
+           <div class="col-2">
+                <i class="fa-regular fa-heart toggle-heart"></i> 
+                <button>Apply Now</button>
+                <div class="content1">
+                    <p><i class="fa-regular fa-calendar-days"></i> Deadline: 01 Jan, 2045</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="button">
+         <button>Browser More Job</button>
+     </div>
+
+
+
+   
+
+   
+
+
+
+
+
+
+   
+
+
+
+   <script>
+
+ document.addEventListener('DOMContentLoaded', function() {
+            const options = document.querySelectorAll('.option');
+
+            options.forEach(option => {
+                option.addEventListener('click', function() {
+                    options.forEach(opt => opt.classList.remove('clicked'));
+                    this.classList.add('clicked');
+                });
+            });
+
+            const hearts = document.querySelectorAll('.toggle-heart');
+            hearts.forEach(heart => {
+                heart.addEventListener('click', function() {
+                    this.classList.toggle('fa-regular');
+                    this.classList.toggle('fa-solid');
+                });
+            });
+        });
+   </script>
+</body>
+</html>

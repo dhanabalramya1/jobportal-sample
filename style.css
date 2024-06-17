@@ -1,0 +1,306 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+.center-heading {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+/* Options container */
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Option styling */
+.option {
+    margin: 0 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Default underline color and hover effect */
+.option::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.option:hover::after {
+    background-color:#23b244; /* Change hover color here */
+}
+
+/* Specific underline color for clicked options */
+.option.clicked::after {
+    background-color:#23b244; /* Default underline color for clicked options */
+}
+
+/* Hover color and specific underline color for each option */
+#featured.clicked::after {
+    background-color:#23b244;
+}
+
+#part-time.clicked::after {
+    background-color: #23b244;
+}
+
+#full-time.clicked::after {
+    background-color: #23b244;
+}
+
+
+
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 15px;
+    margin: 40px;
+}
+
+/* Column styles */
+.col-1 {
+    display: flex;
+    gap: 10px;
+}
+.col-1, .col-2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.col-1 p i {
+    color: #23b244;
+}
+.col-1 p {
+    color: dimgray;
+    font-size: 14px;
+}
+.content {
+    margin: 0px 30px;
+}
+.col-2 {
+    position: relative;
+}
+.content1 {
+     position: absolute;
+    bottom: -15px;
+    font-size: 14px;}
+
+/* Image and job title */
+h1 {
+    color: black;
+}
+h2 {
+    color: dimgray;
+}
+.image img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.image h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.image p {
+    margin: 5px 0 0;
+    display: flex;
+    align-items: center;
+}
+.image p i {
+    margin-right: 5px;
+    color: #23b244;
+}
+
+/* Column 2 styles */
+.col-2 i {
+    margin-right: 10px;
+    color: #23b244;
+}
+.col-2 button {
+    background-color: #23b244;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.col-2 p {
+    margin-top: 15px;
+    color: dimgray;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.col-2 p i {
+    margin-right: 5px;
+    color: #23b244;
+}
+
+.button button
+{
+    text-align: center;
+    color: #ffffff;
+    background-color: #23b244;
+    border: none;
+    outline: none;
+    padding: 20px 40px;
+    font-size: 18px;
+    margin: 20px;
+}
+.button
+{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+
+/* Responsive styles */
+@media (min-width: 768px) {
+	{
+		.option
+		{
+			margin: 0px 10px;
+		}
+	}
+    .box {
+        flex-direction: row;
+    }
+
+    .col-1, .col-2 {
+        flex: 1;
+        margin-bottom: 0;
+    }
+
+    .col-1 {
+        justify-content: flex-start;
+    }
+
+    .col-2 {
+        justify-content: flex-end;
+    }
+
+    .col-2 button {
+        margin-left: 15px;
+    }
+    .col-2 .col-2-first
+    {
+        flex-direction: row-reverse;
+    }
+
+}
+
+@media (max-width: 480px)
+{
+    h1
+    {
+        font-size: 20px;
+    }
+    .options
+    {
+        margin: 20px;
+    }
+    .option
+    {
+        font-size: 14px;
+        padding: 0;
+    }
+	h2
+	{
+		padding: 0px;
+        font-size: 20px;
+        width: 200px;
+    }
+    .col-1 p
+    {
+        color: dimgray;
+        font-size: 12px;
+        margin: 5px 0px;
+	}
+	
+    .box {
+        flex-direction: column;
+    }
+
+
+    .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 15px;
+    margin: 10px;
+    .col-1, .col-2 {
+        flex-direction: row;
+        align-items: flex-end;
+    }
+   .col-2 {
+            width: 100%;
+            align-items: center;
+            display: flex;
+            align-content: stretch;
+            justify-content: flex-start;
+    .col-2 i {
+        order: 1;
+      
+    }
+    .col-2 p {
+    margin: 20px 0 0;
+    color: dimgray;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    align-content: stretch;
+    justify-content: space-around;
+}
+    .col-2 button {
+        order: 1;
+        width: 40%;
+        margin-bottom: 20px;
+        margin-right: 50%;
+    }
+  
+    .col-2 i 
+    {
+        gap: 20px;
+    }
+    .content1 {
+        position: absolute;
+        bottom: -20px;
+        margin-right: 8px; 
+        font-size: 12px; 
+    }
+}
+}
+
+
